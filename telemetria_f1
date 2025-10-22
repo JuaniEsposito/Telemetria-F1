@@ -22,7 +22,7 @@ telemetria = fast_driver.get_car_data().add_distance()
 # 6. Graficar la velocidad en función de la distancia
 plt.figure(figsize=(10, 5))
 plt.plot(telemetria['Distance'], telemetria['Speed'], color='red', label='Velocidad (km/h)')
-plt.xlabel('Distancia (m)')
+plt.xlabel('Distancia (km)')
 plt.ylabel('Velocidad (km/h)')
 plt.title(f"Telemetría de {fast_driver['Driver']} - Vuelta más rápida en {session.event['EventName']}")
 plt.legend()
